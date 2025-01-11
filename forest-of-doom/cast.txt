@@ -1,0 +1,27 @@
+Antagonists:
+
+Vicissitude (Sissy) Wormwood:
+               Sissy: A cunning and manipulative green hag, the main antagonist.
+            Skullcap: Sissy's scheming crow familiar.
+           Scarecrow: A magically animated scarecrow guarding the entrance to Sissy's lair.
+        Twig Blights: Plant-like creatures that attack the heroes during their camp.
+        Giant Spider: A monstrous arachnid that ambushes the heroes during their camp.
+                Ogre: A hulking brute guarding the warhammer handle.
+           Snobblins: Goblin captured by the ogre.
+Blobblins the Goblin Ghoul: Inhabitant of the eerie crypt.
+    Dark Elf Bandits: Ambush the heroes on their journey.
+Awakened Blackthorns: Thorns imbued with dark magic, creating a dangerous obstacle course.
+
+Allies:
+
+  Twilight Bloodmoon: A powerful dryad, initially feared by the heroes, but ultimately a valuable ally.
+           Sugarplum: A mischievous faerie dragon, providing comic relief and unexpected assistance.
+Archmage Gereth Yaztromo:
+            Yaztromo: A wise and enigmatic wizard, the key to unlocking the secrets of the shattered warhammer.
+              Boomer: A gruff but kind centaur, a respected figure in the region (Sissy impersonates him).
+
+Other:
+
+              Bigleg: A burly dwarf, whose murder sets the entire adventure in motion.
+             Trumble: A dwarven illusion created by Vicisitude Wormwood.
+      King Gillibran: The noble and respected leader of Stonebridge.

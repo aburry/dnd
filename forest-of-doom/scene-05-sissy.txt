@@ -1,0 +1,62 @@
+Scene: 5
+Title: Sissy
+
+Summary:
+
+Sissy, the cunning hag, weaves a web of deceit. She warns of a malevolent witch and a fearsome dragon, while secretly misdirecting the heroes from the shattered warhammer. Inexperienced and desperate, the heroes become lost in a maze of trees and lies.
+
+-- ACTION --
+Attack Sissy
+Attack Skullcap
+Attack the scarecrow
+Talk to Sissy.
+Capture Skullcap.
+Talk to Skullcap.
+Destroy Sissy's hut.
+Follow Skullcap.
+Dispell Sissy's illusion.
+Bargain for a cure for their curse.
+Buy healing/equipment.
+Spy on/investigate Sissy.
+Search for clues.
+Search for hammer pieces.
+Find a cure for their curse.
+
+-- CHARACTER --
+The heroes may be injured.
+Resources may be depleated.
+The heroes have been cursed by Sissy.
+The heroes are new to the region.
+They are unprepared to solve Stonebridge's problem.
+They are inexperienced low level characters.
+
+-- WORLD --
+Darkwood is large and dangerous.
+Unknown region of Titan.
+Titan is populated by monsters and dangerous magic.
+
+-- STAKES --
+Sissy warn's them about an evil witch/dryad, and a small evil dragon.
+The very plants are hostile.
+The heroes learn that the hammer has been broken in two, so now there are two quests.
+The heroes need a cure for their curse.
+They need to save the settlement of Stonebridge.
+The heroes need work to pay their way.
+The heroes need adventure to feed their quest for glory.
+
+-- PROBLEM --
+Sissy is trying to manipulate the heroes into dispatching her enemies.
+She lies about the location of the warhammer pieces.
+Sissy is trying to prevent their success.
+
+-- GOAL --
+Find Bloodmoon.
+Find Sugarplum.
+Remove their curses.
+Find the hammer pieces.
+Find clues.
+Find goblins.
+
+
+-- INCIDENT --
+Encountering Sissy.

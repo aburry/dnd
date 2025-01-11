@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: chapter;
+  background-color: antiquewhite;
+  font-size: 13px;
+}
+h1, h2, h3, h4 {
+  color: maroon;
+  font-variant: small-caps;
+}
+h2:before {
+  content: "Chapter " counter(chapter) ": ";
+}
+h2 {
+  counter-increment: chapter;
+}
+h3 {
+  border-bottom: 2px solid darkkhaki;
+}
+.monster, .treasure {
+  font-weight: bold;
+}
+.storyboard {
+  width: 100%;
+  border-radius: 30px;
+}
+.section {
+  column-count: 2;
+}
+.section p:first-of-type:first-letter {
+  initial-letter: 3;
+  padding: 0.5em;
+  margin-right: 1em;
+  border: 1px solid;
+  font-weight: bold;
+}
+figure {
+  position: relative;
+  margin: 0; }
+figcaption {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  color: antiquewhite;
+  text-align: center;
+  font-style: italic;
+  width: 70%;
+  transform: translate(-50%, 0);
+  padding: 3px;
+  border-radius: 7px;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 0 5px black;
+}
+</style>
+</head>
+<body>
+
+<figure class="cover">
+<h1 style=" color: black; position: absolute; font-size: 98px; top: 0; left: 50%; text-align: center; font-weight: bold; transform: translate(-50%, 0); ">The Forest of Doom</h1>
+<h1 style=" color: yellow; text-shadow: 0px 0px 15px yellow , 0px 0px 1px black , 0px 0px 1px black , 0px 0px 1px black; position: absolute; font-size: 96px; top: 0; left: 50%; text-align: center; font-weight: bold; transform: translate(-50%, 0); ">The Forest of Doom</h1>
+<img src="00-cover-goblins.jpeg" class="storyboard"/>
+<figcaption>Lost in a maze of trees and lies, can you see through the veils of illusion, discern friend from foe, and recover the shattered Dwarven Warhammer to save Stonebridge from ruin?</figcaption>
+</figure>
+
+<h2>Introduction</h2>
+<div class="section">
+<h3>Story Information</h3>
+<p>The players are searching Darkwood Forest for two halves of the stolen <span class="treasure">Warhammer of Stonebridge</span>. The main antagonist, Sissy, is a <span class="monster">green hag</span> who continually uses lies and illusion to throw them off. The adventure breaks down into the following 15 encounters.</p>
+<ol>
+<li>Bigleg's Last Breath: A dying dwarf's cryptic clue sends the heroes racing against time to save Stonebridge from a deadly menace.</li>
+<li>The Hag’s Ambush: Disguised and deadly, Sissy the <span class="monster">green hag</span> springs a trap—will the heroes unravel her deception or succumb to her chilling curse?</li>
+<li>Yastromo's Truth: The fabled warhammer is broken, its shards scattered—can the heroes face this devastating truth and press on?</li>
+<li>Forest of Peril: Trapped in Darkwood, the heroes battle living plants and their own despair—will they endure or be consumed by the wild?</li>
+<li>Weaver of Lies: Sissy’s warnings seem helpful, but her deceit leaves the heroes stranded—can they untangle truth from trickery before it’s too late?</li>
+<li>Sugarplum’s Test: Annoying yet invaluable, Sugarplum the <span class="monster">faerie dragon</span> holds the key to survival—can the heroes set aside their frustrations to harness his chaotic brilliance?</li>
+<li>Ogre’s Challenge: An <span class="monster">ogre</span> guards the warhammer’s handle—will the heroes’ cunning and courage prevail against brute strength?</li>
+<li>Crossing the River: Leaving an ally behind, the heroes face the raging Catfish River—can they navigate its dangers and enter the unknown?</li>
+<li>Night of Terror: Cursed and hunted, the heroes face a relentless attack by <span class="monster">twig blights</span> and a <span class="monster">giant spider</span>—will they survive the night?</li>
+<li>Buried Hopes: A landslide buries the warhammer handle—can the heroes claw back their chance at victory, or will nature claim their quest?</li>
+<li>Bloodmoon’s Bargain: To break their curse and find the warhammer’s head, the heroes must confront the <span class="monster">dryad</span> Bloodmoon—can they trust the source of their suffering?</li>
+<li>Crypt of the Damned: In a bone-filled crypt, the heroes face a horde of <span class="monster">ghouls</span>—will they recover the warhammer or join the dead?</li>
+<li>The Dark Elf Deal: Ambushed and outmatched, the heroes must choose—fight for their lives or strike a dangerous bargain with their captors.</li>
+<li>The Dwarf’s Offer: A mysterious ally appears—but is he friend or foe? The heroes must decide whom to trust with Stonebridge’s fate.</li>
+<li>Victory at Stonebridge: Returning as saviors, the heroes face one final choice—embrace their hard-won fame or seek a cure for their lingering curse.</li>
+</ol>
+<h3>Game Information</h3>
+<p>Written for D&amp;D 5e 2024 edition.</p>
+<p>Tier 1 (Levels 1-4). Although the scope of the threat is more like a Tier 2 (Levels 5-10) adventure.</p>
+<p>Each encounter is labelled as being primarily exploration, social interaction, or combat. A challenge rating (CR), and alternative ways to scale it, is also provided.</p>
+<p>Each encounter has 2 main sections, the "Story Information" and the "Game Information". The story information contains the narrative details. The game information contains the information related to the game mechanics, monster stats, difficulty classes, treasure and the like.</p>
+</div>
+
+<h2>Bigleg's Last Breath (Exploration/Hook)</h2>
+<div class="section">
+<p>A dying dwarf's cryptic clue sends the heroes racing against time to save Stonebridge from a deadly menace.</p>
+<h3>Story Information</h3>
+<p>Bigleg's murder on the side of a forest trail by dark elf arrows reveals a deadly threat to the dwarven settlement of Stonebridge. Driven by clues, the heroes race to find the wizard Yastromo, Stonebridge's only hope for survival.</p>
+<ul>
+<li>Fallen Dwarf: The central figure is the dead dwarf, lying prone with arrows protruding from his chest.</li>
+<li>Dark Elven Arrows: Three arrows, likely of dark elven origin, are lodged in the dwarf's chest.</li>
+<li>Open Chest: A small wooden chest lies open beside the dwarf, revealing a glimpse of gems within.</li>
+<li>Axe: A battle axe lies near the dwarf, suggesting he was armed and prepared for combat.</li>
+<li>Tree: A large oak tree provides a backdrop, its gnarled roots and thick trunk adding to the sense of age and mystery.</li>
+<li>Forest Setting: The scene is set within a dense forest, with dappled sunlight and a carpet of leaves on the ground.</li>
+<li>White-Capped Crow: A crow (Skullcap), perched on a branch, observes the scene with an intelligent and potentially sinister gaze.</li>
+</ul>
+<figure>
+<img src="01-bigleg.jpeg" class="storyboard"/>
+<figcaption>Murdered by dark elves, Bigleg's quest to save his home of Stonebridge is over before it starts.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<h4>Treasure</h4>
+<ul>
+<li>Rubies. Pouch of 15 uncut spinel rubies about 1 cm in diameter (15 x 100 gp).</li>
+<li>Writ. A letter of introduction for Bigleg to Yaztromo. It summarises the theft of the warhammer, outlines Bigleg's quest, and asks Yaztromo to provide any assistance he can.</li>
+<li>Map. Shows Yaztromo's tower in the south, the dwarf settlement of Stonebridge to the north, and the Catfish river bisecting Darkwood Forest as it flows east to west.</li>
+<li>Magic Item. Ghoti's Earring of Sylvan Communication (see Appendix: Treasure).</li>
+<li>XP</li>
+</ul>
+<h4>Player Actions</h4>
+<ul>
+<li>Capture or kill Skullcap. He will flee after being noticed.</li>
+<li>Investigate the murder. Investigation DC 10</li>
+</ul>
+<h4>Alternatives</h4>
+<ul>
+<li>Bigleg could still be alive. If the players heal him he can be played as an NPC.</li>
+</ul>
+</div>
+
+<h2>The Hag's Ambush (Interaction)</h2>
+<div class="section">
+<p>Disguised and deadly, Sissy springs a trap—will the heroes unravel her deception or succumb to her chilling curse?</p>
+<h3>Story Information</h3>
+<p>Following Bigleg's clue, the heroes seek Yaztromo, only to be intercepted by Sissy, the malevolent <span class="monster">green hag</span>. Disguised as Boomer the courier <span class="monster">centaur</span>, she attempts to thwart them.</p>
+<ul>
+<li>Centaur Figure: The central subject is a centaur with a somewhat weathered appearance. He has a long, flowing white beard, a muscular torso with visible tattoos, and is wearing a red beret. A pair of spectacles sits perched on his nose, and a slight paunch hints at a fondness for good food. A gap-toothed smile suggests a life filled with laughter and perhaps a few too many adventures.</li>
+<li>Horse Features: The lower body is that of a brown horse with a powerful build and a flowing mane.</li>
+<li>Attire: The centaur is wearing a belt with pouches and carries a spear slung over his shoulder. He also has saddlebags full of correspondence that he is delivering.</li>
+<li>Setting: The centaur is standing on a dirt path through a lush forest with tall trees and dense foliage.</li>
+</ul>
+<figure>
+<img src="02-boomer.jpeg" class="storyboard"/>
+<figcaption>Sissy disguised as Boomer.</figcaption>
+</figure>
+<p>Failing that, she changes her disguise into the <span class="monster">dryad</span> Bloodmoon.</p>
+<ul>
+<li>A Bizarre Hybrid: The creature is a strange combination of horse, woman, and tree. It has the powerful hindquarters and legs of a stallion, cloaked in dark, almost leathery hide.</li>
+<li>Upper Body Transformation: The upper body is more humanoid, with elongated features, skin like bark, and branches sprouting from its shoulders and head. It's as if the creature is merging with the surrounding trees.</li>
+<li>Unnatural Grace: The creature moves with an unnatural grace, its hooves barely touching the ground as it advances.</li>
+<li>Expressive Face: Its face is a mask of contradictions - wild, knowing eyes, a sly smile, and yet something ancient and unsettling lurks beneath the surface.</li>
+<li>Shifting Form: The creature's form seems to be in flux, flickering and shifting before your eyes.</li>
+</ul>
+<figure>
+<img src="02a-transformation.jpeg" class="storyboard"/>
+<figcaption>Sissy transforms from Boomer to Bloodmoon.</figcaption>
+</figure>
+<p>Her illusory transformation complete, in the guise of Bloodmoon, she curses the heroes with her chilling magic.</p>
+<ul>
+<li>A Majestic Figure: The creature stands before you, tall and imposing. Her skin is a mottled green, like bark, and leaves seem to sprout from her limbs.</li>
+<li>Dark Eyes: Her eyes are an unsettling shade of red, burning with an unnatural intensity.</li>
+<li>Tangled Hair: Her hair is a mass of dark, thorny vines that writhe and twist like living things.</li>
+<li>Open Arms: She stands with her arms outstretched, palms facing upwards, as if offering a blessing. However, the gesture feels strangely menacing.</li>
+<li>Red Glow: A faint red aura seems to emanate from her, casting an eerie glow on the surrounding trees.</li>
+</ul>
+<figure>
+<img src="02b-sissy-bloodmoon.jpeg" class="storyboard"/>
+<figcaption>Sissy disguised as Bloodmoon.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<h4>Alternatives</h4>
+<ul>
+<li>The scene is optional.</li>
+<li>If you want to skip the curse, the players can be discouraged by the actual Boomer.</li>
+</ul>
+<h4>Curses</h4>
+<ul>
+<li>Reduce each character's primary attribute by 2.</li>
+<li>A roll of 1-3 will be considered a critical fail on all d20 checks.</li>
+<li>Lose 3 skill proficiency bonuses.</li>
+</ul>
+<h4>Player Actions</h4>
+<ul>
+<li>Offend Boomer. Eventually Boomer should appear to become frustrated, prompting Sissy to change her disguise to that of Bloodmoon. In the guise of Bloodmoon she curses the players for daring to interfere.</li>
+<li>Recruit Boomer. He cannot be recuited, he has mail to deliver.</li>
+<li>Examine Boomer. If the players accuse Boomer of deception Sissy will change her disguise to Bloodmoon. Note that Sissy wants her Boomer disguise to be discovered because she wants to trick the players into believing that Bloodmoon is the cause of the curse.</li>
+<li>Question Boomer. He advises against helping the dwarves, Darkwood Forest is too dangerous, the mission impossible, and the dwarves unworthy.</li>
+<li>Hide from Boomer. He will stop and call the players out.</li>
+<li>Attack Boomer. He will charge away. When he is a safe distance he will transform into Bloodmoon and curse the players. After cursing the players she will flee.</li>
+</ul>
+<p>See Lost Things and Minor Curses, WBW p.15-17. See Curses,  RGR, p. 192. See Hex, PHB24, p.285. See Remove Curse, PHB24, p.312. See Greater Restoration, PHB24, p. 281. See Wish, PHB24, p. 341. See Bestow Curse, PHB24, p. 246. See Dispel Magic, PHB24, p.264. See Curses, DMG24, p. 60. See Charms, DMG24, p. 99. See Centaur, MM14, p. 38. See Dryad, MM14, p. 121.</p>
+<p>See Enchanted Springs, Magic Mushrooms, and Primal Fruit, TCE pp.165-169.</p>
+</div>
+
+<h2>Yaztromo's Truth (Interaction)</h2>
+<div class="section">
+<p>The fabled warhammer is broken, its shards scattered—can the heroes face this devastating truth and press on?</p>
+<h3>Story Information</h3>
+<p>Lost and cursed, the heroes face an impossible quest. Their only hope lies with the enigmatic Archmage Gereth Yaztromo, but he reveals a devastating truth: the legendary warhammer they seek is shattered, its pieces scattered across the treacherous Darkwood Forest.</p>
+<ul>
+<li>A Towering Presence: A tall, stone tower rises above the dense forest, its silhouette stark against the sky.</li>
+<li>Ancient Architecture: The tower is built from weathered stone, with arched windows and a pointed roof. It has the air of an ancient, forgotten place.</li>
+<li>Distinctive Roof and Walls: The tower is topped with a red clay tile roof, giving it a warm, inviting look. The walls are covered in a smooth, white plaster, suggesting a well-maintained structure.</li>
+<li>Solitary Location: The tower stands alone, surrounded by a ring of tall trees that block out the sunlight. It gives an eerie impression of isolation.</li>
+<li>Signs of Life: Smoke curls from a chimney, indicating that someone is currently within.</li>
+<li>A Winding Path: A narrow, dirt path leads through the trees towards the tower's entrance.</li>
+</ul>
+<figure>
+<img src="03-tower.jpeg" class="storyboard"/>
+<figcaption>Yaztromo's tower.</figcaption>
+</figure>
+<ul>
+<li>An Old Man: A wizened old man with a long, white beard stands in the doorway of the tower. His eyes, though hidden behind thick spectacles, seem to twinkle with mischief.</li>
+<li>A Towering Hat: He wears a wide-brimmed, pointed hat adorned with feathers and a strange symbol. The hat seems almost as tall as he is.</li>
+<li>A Worn Robe: The wizard is dressed in a long, dark robe that is frayed at the edges, suggesting years of wear and tear.</li>
+<li>A Welcoming Gesture: He gestures towards the interior of the tower with a crooked finger, seemingly inviting you inside.</li>
+<li>An Enigmatic Smile: A sly smile plays on his lips, as if he knows something you don't.</li>
+</ul>
+<figure>
+<img src="04-yaztromo.jpeg" class="storyboard"/>
+<figcaption>Yaztromo.</figcaption>
+</figure>
+<ul>
+<li>A Wall of Trees: Towering trees form a dense, almost impenetrable wall ahead. The branches intertwine overhead, casting the path in deep shadow.</li>
+<li>Thick Undergrowth: The ground is covered in a thick layer of fallen leaves and tangled roots, making movement difficult.</li>
+<li>Eerie Silence: An unnatural silence hangs over the forest, broken only by the occasional rustle of unseen creatures.</li>
+<li>A Narrow Path: A narrow, winding path disappears into the depths of the forest, inviting exploration but also hinting at danger.</li>
+<li>Unease: The air feels heavy and oppressive, and an unsettling feeling washes over you as you gaze into the dark depths of the forest.</li>
+</ul>
+<figure>
+<img src="05-darkwood.jpeg" class="storyboard"/>
+<figcaption>Darkwood Forest entrance.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<h4>Alternatives</h4>
+<h4>Player Actions</h4>
+<ul>
+<li>Recruit Yaztromo. He cannot be recruited, he has larger responsibilities.</li>
+<li>Buy magic from Yaztromo.</li>
+<li>Attack Yaztromo. They will be teleported out of the tower.</li>
+<li>Steal from Yaztromo. Anything the players steal will be returned to Yaztromo when they leave the tower.</li>
+</ul>
+<p>See Archmage, MM14, p.342. See Spellcasting Services PHB24 p. 232.</p>
+</div>
+
+<h2>Forest of Peril (Combat)</h2>
+<div class="section">
+<p>Trapped in Darkwood, the heroes battle living plants and their own despair—will they endure or be consumed by the wild?</p>
+<h3>Story Information</h3>
+<p>Trapped in a hostile forest, the heroes face relentless attacks from awakened plants. Their search for the warhammer and a cure for their curse yields nothing, leaving them weakened and desperate.</p>
+<ul>
+<li>A Wall of Trees: Towering oak and ash trees form a dense, almost impenetrable wall ahead. The branches intertwine overhead, casting the path in deep shadow.</li>
+<li>Thick Undergrowth: The ground is covered in a thick layer of fallen leaves and tangled roots, making movement difficult.</li>
+<li>Eerie Silence: An unnatural silence hangs over the forest, broken only by the occasional rustle of unseen creatures.</li>
+<li>A Narrow Path: A narrow, winding path disappears into the depths of the forest, inviting exploration but also hinting at danger.</li>
+<li>Unease: The air feels heavy and oppressive, and an unsettling feeling washes over you as you gaze into the dark depths of the forest.</li>
+<li>Blackthorn Bushes: Scattered along the path are thorny blackthorn bushes, their branches reaching out like skeletal fingers. Some of the bushes seem to writhe and shift, their thorns twitching menacingly.</li>
+</ul>
+<figure>
+<img src="06-awakened-shrub.jpeg" class="storyboard"/>
+<figcaption>Awakened shrub.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Razorvine and Vicious Vine DMG24, p. 78. See Awakened Shrub, MM14, p.317. See Awaken, PHB24, p. 244. See Hunting Trap, PHB24, p. 226. See Net, PHB24, p. 227. See Wild Magic Zone, DMG24, p. 69. See Falling Net, DMG24, p. 100. See Hidden Pit, DMG24, p. 101. See Travel Terrain table, DMG24, p. 38. See Forest Encounters (Levels 1-4), XGE, p. 97. See Bear Trap, XGE p. 114. See Net Trap, XGE p. 114. See Pit Trap, XGE p. 115.</p>
+</div>
+
+<h2>Weaver of Lies (Interaction)</h2>
+<div class="section">
+<p>Sissy’s warnings seem helpful, but her deceit leaves the heroes stranded—can they untangle truth from trickery before it’s too late?</p>
+<h3>Story Information</h3>
+<p>Vicissitude (Sissy) Wormwood, the cunning hag, weaves a web of deceit. She warns of a malevolent witch (Bloodmoon) and a fearsome dragon (Sugarplum), while secretly misdirecting the heroes from the shattered warhammer. Inexperienced and desperate, the heroes become lost in a maze of lies.</p>
+<ul>
+<li>An Elderly Woman: An elderly woman stands before you, her face etched with wrinkles and her hair a mass of silvery white. Her eyes, though clouded with age, still hold a spark of intelligence.</li>
+<li>A Wise Presence: She wears a simple robe and carries a gnarled staff, giving her the appearance of a wise hermit or a healer.</li>
+<li>A Faithful Companion: A large black crow with a distinctive white cap perches on her shoulder, seeming to watch you with curious eyes.</li>
+<li>A Welcoming Smile: She offers you a warm smile, her voice raspy but gentle. "Welcome, travelers," she says, "To what brings you to these woods?"</li>
+</ul>
+<figure>
+<img src="07-skullcap.jpeg" class="storyboard"/>
+<figcaption>Sissy and Skullcap.</figcaption>
+</figure>
+<ul>
+<li>A Rustic Hut: A small, thatched-roof hut sits nestled amongst the trees, its walls constructed of mud and sticks.</li>
+<li>A Welcoming Sight: Smoke curls from a chimney, suggesting a hearth fire within. A scarecrow stands guard in the small garden, seemingly waving a welcome.</li>
+<li>A Wattle Fence: A low wattle fence surrounds the hut, its woven branches creating a rustic charm.</li>
+<li>An Illusion of Tranquility: The overall impression is one of simple rustic charm, a place of peace and solitude in the wilderness. However, there is a subtle unease, a feeling that something is not quite right.</li>
+</ul>
+<figure>
+<img src="08-hut.jpeg" class="storyboard"/>
+<figcaption>Sissy's hut.</figcaption>
+</figure>
+<ul>
+<li>A Monstrous Form: The woman you thought you knew has transformed before your eyes. Her skin is now a sickly green, her eyes glowing with an unnatural light.</li>
+<li>Extra Limbs: She now has four arms, each one long and spindly, ending in sharp, clawed hands.</li>
+<li>A Fascinator of Flies: A grotesque fascinator sits atop her head, adorned with crawling insects and dripping with a viscous fluid.</li>
+<li>Weaving a Web of Fate: She stands waist-deep in a murky swamp, before a loom. Her four arms work in concert as she weaves a tapestry of entrails and shadows.</li>
+<li>An Aura of Evil: A palpable aura of evil emanates from the hag, filling the air with a stench of decay and despair.</li>
+</ul>
+<figure>
+<img src="09-sissy.jpeg" class="storyboard"/>
+<figcaption>Sissy in her true form working at her loom.</figcaption>
+</figure>
+<ul>
+<li>A Rustic Scarecrow: A scarecrow stands guard in the small garden, its tattered clothes flapping in the breeze. It seems to be waving a friendly greeting, holding a rusty scythe in one hand.</li>
+<li>A Crow Companion: A large black crow sits perched on the scarecrow's shoulder, watching you with beady, intelligent eyes.</li>
+<li>Unnaturally Lifelike: The scarecrow seems almost too lifelike, its pose and expression eerily human. There's a disturbing sense of wrongness about it.</li>
+<li>An Uneasy Feeling: As you get closer, a shiver runs down your spine. You have the distinct impression that the scarecrow is watching you, its gaze following your every move.</li>
+</ul>
+<figure>
+<img src="10-scarecrow.jpeg" class="storyboard"/>
+<figcaption>Sissy's scarecrow minion.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Poisonous Gas, DMG24 p.77. See Green Hag, MM14, p.177. See Scarecrow, MM14, p.268. See Raven, MM14, p. 335. See Gulthias Tree, TYP p.30. See Quicksand Pit, DMG24, p. 77. See Sewer Plague, DMG24, p. 61. See Hag Eye, DMG24, p. 265. See Hags: Dark Sisterhood VGM pp. 52-62.</p>
+</div>
+
+<h2>Sugarplum's Test (Interaction)</h2>
+<div class="section">
+<p>Annoying yet invaluable, Sugarplum holds the key to survival—can the heroes set aside their frustrations to harness his chaotic brilliance?</p>
+<h3>Story Information</h3>
+<p>Sugarplum's infuriating antics strain the heroes' patience. Yet, Sugarplum holds the key to their success. Recognizing his potential, they must navigate this volatile alliance if they hope to overcome the dangers ahead.</p>
+<ul>
+<li>A Branching Tree: You are standing in a dense, sun-dappled forest. Before you, a thick, moss-covered branch extends outwards, reaching into the dappled sunlight.</li>
+<li>A Juvenile Dragon: Perched on the branch, you spot an adorable sight. It's a small, golden-yellow dragon, no bigger than a housecat, with a wide, toothy grin and large, expressive eyes.</li>
+<li>Iridescent Wings: The most striking feature of this creature are its wings. They are large and delicate, folded neatly against its back, shimmering with a kaleidoscope of colors that shift and change as the sunlight dances through the leaves.</li>
+<li>Playful Expression: The dragon seems to be watching you with curiosity, its head tilted slightly to one side as if listening intently. You get the distinct impression that this little creature is friendly and playful.</li>
+</ul>
+<figure>
+<img src="11-sugarplum.jpeg" class="storyboard"/>
+<figcaption>Sugarplum.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Faerie Dragon, MM14, p.133. See Amulet of Proof Against Detection and Location, DMG24, p.228.</p>
+<p>Consider a riddle puzzle. See Puzzles, TCE p.171.</p>
+</div>
+
+<h2>Ogre's Challenge (Combat)</h2>
+<div class="section">
+<p>An <span class="monster">ogre</span> guards the warhammer’s handle—will the heroes’ cunning and courage prevail against brute strength?</p>
+<h3>Story Information</h3>
+<p>Guided by Sugarplum the heroes arrive at an ogre's cave. The heroes use brain and brawn to wrest the warhammer handle from the clutches of the ogre in its lair.</p>
+<ul>
+<li>A Mossy Cave Entrance: You stand at the edge of a dense forest, sunlight filtering through the leaves to cast dappled shadows on the forest floor. Before you, a wide, moss-covered cave entrance yawns open, inviting exploration.</li>
+<li>A Towering Figure: Standing guard before the entrance is a hulking figure. This is a large, muscular ogre, its green skin glistening with sweat. It wears a crudely fashioned leather armor and wields a massive club over its shoulder.</li>
+<li>A Small Companion: At its feet stands a diminutive goblin, its beady eyes darting nervously between you and the ogre. It wears a tattered cloak and carries a short spear.</li>
+<li>A Stone Path: A narrow, cobbled path leads from the forest towards the cave entrance, passing between the ogre and the goblin.</li>
+</ul>
+<figure>
+<img src="12-ogre.jpeg" class="storyboard"/>
+<figcaption>Ogre.</figcaption>
+</figure>
+<ul>
+<li>A Cowering Figure: Huddled against the far wall, sits a creature. It is humanoid in shape, but with pointed ears, wrinkled, greenish skin, and a bald head.</li>
+<li>Bound and Desperate: The creature is bound tightly with thick iron chains, its hands and feet shackled. It shivers violently, its eyes wide with terror as it stares at you.</li>
+<li>A Grimacing Expression: The creature’s face is contorted in a mixture of fear and despair. It whimpers softly, begging for mercy.</li>
+</ul>
+<figure>
+<img src="13-goblin.jpeg" class="storyboard"/>
+<figcaption>Goblin prisoner.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<h4>Treasure</h4>
+<ul>
+<li>Warhammer Handle. Take note of who is carrying the warehammer handle.</li>
+</ul>
+<p>See Goblins, MM14 p. 165. See Ogres, MM14 p.237.</p>
+</div>
+
+<h2>Crossing the River (Exploration)</h2>
+<div class="section">
+<p>Leaving an ally behind, the heroes face the raging Catfish River—can they navigate its dangers and enter the unknown?</p>
+<h3>Story Information</h3>
+<p>Bidding farewell to Sugarplum, the heroes, with trepidation, face the unknown dangers of northern Darkwood Forest as they cross the churning Catfish River.</p>
+<ul>
+<li>A Breathtaking Vista: You emerge from a dense thicket of trees and are met with a breathtaking vista. The forest opens up before you, revealing a picturesque valley nestled between two towering mountain ranges.</li>
+<li>A Winding River: A crystal-clear river snakes its way through the valley, its waters reflecting the azure sky and the verdant slopes of the mountains.</li>
+<li>A Precarious Crossing: A rickety rope bridge slung between two rocky cliffs spans the river, offering a precarious crossing to the other side.</li>
+<li>A Majestic Flight: A majestic dragon soars gracefully through the air above the valley, its powerful wings carrying it effortlessly on the wind.</li>
+<li>A Peaceful Atmosphere: The scene is one of tranquility and serenity, with the gentle murmur of the river and the distant chirping of birds creating a peaceful ambiance.</li>
+</ul>
+<figure>
+<img src="14-catfish-river.jpeg" class="storyboard"/>
+<figcaption>Catfish River.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Falling into Water, TCE p. 170.</p>
+</div>
+
+<h2>Night of Terror (Combat)</h2>
+<div class="section">
+<p>Cursed and hunted, the heroes face a relentless attack by <span class="monster">twig blights</span> and a <span class=monster">giant spider</span>—will they survive the night?
+</p>
+<h3>Story Information</h3>
+<p>Cursed and weakened, the exhausted heroes struggle to find respite by the rushing Catfish River. Their fragile peace is shattered by a horrifying night assault. Twig blights swarm from the darkness, followed by a <span class="monster">giant spider</span>. The heroes, fighting for their lives, must overcome their injuries and the growing threat to survive.</p>
+<ul>
+<li>A Campfire Under the Stars: You find yourselves in a small clearing within a dense forest. A crackling fire burns brightly in the center, casting dancing shadows across the surrounding trees.</li>
+<li>A Pot Over the Flames: A large iron pot hangs over the fire, suspended from a makeshift tripod of branches. Steam rises from the pot, carrying the tantalizing aroma of stew or perhaps some other hearty meal.</li>
+<li>A Sword at the Ready: Leaning against one of the trees is a long, gleaming sword, its blade reflecting the firelight. It seems to have been hastily abandoned.</li>
+<li>A Serene Setting: The night sky is ablaze with stars, and a distant lake shimmers in the moonlight. The scene is both inviting and mysterious, promising rest and adventure.</li>
+</ul>
+<figure>
+<img src="14a-camp.jpeg" class="storyboard"/>
+<figcaption>A long rest at camp.</figcaption>
+</figure>
+<ul>
+<li>A Sudden Movement: From the undergrowth, two figures emerge. They are humanoid in shape, but their bodies are covered in a thick layer of bark and moss.</li>
+<li>Twisted Limbs and Claws: Their limbs are long and twisted, ending in sharp, clawed hands. Their faces are obscured by a mask of gnarled branches, but you can see their eyes glowing with a malevolent light.</li>
+<li>A Sense of Unease: The creatures move with an unnatural grace, their movements silent and deliberate. You feel a sense of unease wash over you as they advance, their eyes fixed on you with predatory intent.</li>
+</ul>
+<figure>
+<img src="15-blights.jpeg" class="storyboard"/>
+<figcaption>Twig blights.</figcaption>
+</figure>
+<ul>
+<li>Moonlight Night: The moon hangs heavy in the sky, casting long, eerie shadows across the ground.</li>
+<li>A <span class="monster">giant spider</span>: Perched on the trunk of a massive oak tree is a monstrous creature. It is a spider of immense size, its body the size of a small dog, with legs that span several feet.</li>
+<li>Fangs and Eyes: Its chitinous exoskeleton glistens in the moonlight, and its many eyes gleam with an unnatural light. Two large fangs protrude from its jaws, dripping with a viscous venom.</li>
+<li>A Threatening Presence: The spider watches you with malevolent interest, its legs twitching and its fangs clicking together. A shiver runs down your spine as you realize you are not alone in this dark forest.</li>
+</ul>
+<figure>
+<img src="16-spider.jpeg" class="storyboard"/>
+<figcaption>Giant spider.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Webs DMG24, p.79. Dex DC 12 or be restrained. DC 12 Athletics or Acrobatics to escape. Details on destroying the webs.</p>
+<p>Consider giant wolf spider or a swarm as well.</p>
+<p>See Dryad, MM14 p. 121.</p>
+</div>
+
+<h2>Buried Hopes (Exploration)</h2>
+<div class="section">
+<p>A landslide buries the warhammer handle—can the heroes claw back their chance at victory, or will nature claim their quest?
+<h3>Story Information</h3>
+<p>Engulfed by a raging landslide in the treacherous hills of Darkwood, the cursed heroes fight for survival, their quest shattered as the precious warhammer handle vanishes beneath the rubble.</p>
+<ul>
+<li>A Narrow Pass: You find yourselves in a narrow pass between two towering cliffs. The sheer rock faces rise hundreds of feet on either side, casting deep shadows across the path.</li>
+<li>A Sense of Unease: As you make your way through the pass, you feel a strange unease. The air seems heavy, and the silence is almost deafening. You instinctively feel that something is wrong.</li>
+<li>Loose Stones: The ground beneath your feet feels unstable, and you notice loose rocks and pebbles scattered across the path.</li>
+<li>A Distant Rumble: Suddenly, a low rumble echoes through the pass, shaking the very ground beneath you. Dust begins to rain down from the cliff face above.</li>
+<li>A Crack in the Rock: A long, jagged crack appears in the cliff face above you, widening with terrifying speed. You realize with a jolt that a landslide is imminent.</li>
+</ul>
+<figure>
+<img src="17-landslide.jpeg" class="storyboard"/>
+<figcaption>Landslide.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Rockslide DMG24, p.78. Dex DC 15 to save. 2d10 bludgeoning and prone on fail, half damage only on success. Details for escaping on fail. See Climber's Kit, PHB24, p.225.</p>
+</div>
+
+<h2>Bloodmoon's Bargain (Interaction)</h2>
+<div class="section">
+<p>To break their curse and find the warhammer’s head, the heroes must confront Bloodmoon—can they trust the source of their suffering?</p>
+<h3>Story Information</h3>
+<p>Haunted by Sissy's lies, the heroes fear facing the <span class="monster">dryad</span> Twilight Bloodmoon. Overcoming their doubts, they seek her aid to recover the missing Warhammer head and break their curses.</p>
+<ul>
+<li>A Forgotten Abbey: You emerge from the dense undergrowth and find yourselves before a small, stone abbey. Vines and ivy creep over the crumbling walls, and the once vibrant colors of the roof tiles have faded to a dull brown.</li>
+<li>A Figure in the Foreground: Standing before the entrance, bathed in a shaft of sunlight, is a figure. It is tall and slender, with pale skin and long, flowing white hair. It wears a simple white robe and carries a staff topped with a crescent moon.</li>
+<li>An Eerie Silence: The abbey is eerily silent, broken only by the occasional rustle of leaves in the surrounding trees. A sense of mystery and foreboding hangs heavy in the air.</li>
+<li>A Sense of Abandonment: The overgrown pathways and crumbling stones suggest that the abbey has been abandoned for many years, perhaps even centuries.</li>
+</ul>
+<figure>
+<img src="18-monastery.jpeg" class="storyboard"/>
+<figcaption>Monastery ruins.</figcaption>
+</figure>
+<ul>
+<li>A Woman of the Woods: You find yourselves face-to-face with a <span class="monster">dryad</span>, a being of ethereal beauty. Her skin is pale, almost translucent, and her eyes are an otherworldly shade of green.</li>
+<li>A Crown of Branches: Her hair is a cascade of raven-black tresses, adorned with a crown of twisted branches and vibrant green leaves.</li>
+<li>A Connection to Nature: Vines and leaves seem to intertwine with her hair and clothing, as if she were one with the surrounding forest.</li>
+<li>An Enigmatic Expression: Her expression is unreadable, a mix of curiosity and something more... ancient. Her gaze holds a power that seems to draw you in, and a shiver runs down your spine.</li>
+</ul>
+<figure>
+<img src="19-bloodmoon.jpeg" class="storyboard"/>
+<figcaption>Bloodmoon.</figcaption>
+</figure>
+<h3>Game Information</h3>
+</div>
+
+<h2>Crypt of the Damned (Combat)</h2>
+<div class="section">
+<p>In a bone-filled crypt, the heroes face a horde of <span class="monster">ghouls</span>—will they recover the warhammer or join the dead?</p>
+<h3>Story Information</h3>
+<p>Following Bloodmoon's cryptic clues, descend into an eerie crypt in an abandoned monastery. There, amidst the bones of the long dead, they face a horde of undead ghouls in a desperate struggle to recover the missing head of the legendary warhammer.</p>
+<ul>
+<li>A Crypt of Shadows: You stand at the entrance to a dark, stone crypt. The air is thick with dust and the smell of decay.</li>
+<li>A Crouching Figure: In the dim light, you can make out a figure crouching in the shadows. It is small and hunched over, with large, pointed ears and glowing yellow eyes.</li>
+<li>A Sinister Grin: The creature lets out a high-pitched giggle, revealing a set of sharp, pointed teeth. Its eyes gleam with an unnatural light, and you notice a sickly green tinge to its skin.</li>
+<li>A Sense of Unease: You feel a shiver run down your spine. This creature is clearly not a goblin. Its unnatural appearance and the sickly sweet smell emanating from it suggest something far more sinister - a ghoul.</li>
+</ul>
+<figure>
+<img src="20-ghoul.jpeg" class="storyboard"/>
+<figcaption>A goblin reborn as a ghoul.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<h4>Treasure</h4>
+<ul>
+<li>Warhammer head.</li>
+</ul>
+<p>See Green Slime DMG24, p.76. See Holy Water, PHB24, p.226. See Desecrated Ground, DMG14, p. 110. See Ghouls, MM14 p. 148.</p>
+</div>
+
+<h2>The Dark Elf Deal (Interaction)</h2>
+<div class="section">
+<p>The Dark Elf Deal: Ambushed and outmatched, the heroes must choose—fight for their lives or strike a dangerous bargain with their captors.</p>
+<h3>Story Information</h3>
+<p>Ambushed by ruthless dark elves in Darkwood, the heroes face a grim choice: fight for survival, risking their lives and the precious Warhammer halves, or bargain with their cunning captors.</p>
+<ul>
+<li>A Group of Dark Elf Bandits: Standing before you is a group of five dark elves, their skin a deep, almost obsidian black. They are clad in dark leather armor and wear hoods that obscure their faces, leaving only their piercing yellow eyes visible.</li>
+<li>Armed and Ready: Each elf carries a longbow and a quiver of arrows slung across their back. One of the elves, seemingly the leader, also wields a wicked-looking scimitar at their hip.</li>
+<li>A Hostile Atmosphere: The elves stand in a defensive formation, their eyes fixed on you with a mixture of suspicion and hostility. You get the distinct impression that these are not travelers, but a band of dangerous bandits.</li>
+<li>A Deep Forest Setting: The elves stand amidst a grove of ancient trees, the shadows of the branches creating an eerie atmosphere.</li>
+</ul>
+<figure>
+<img src="21-bandits.jpeg" class="storyboard"/>
+<figcaption>Dark elf bandits.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Drow, MM14 p. 128. See Bandit, MM14 p.343. See Bandit Captain, MM14 p. 344.</p>
+</div>
+
+<h2>The Dwarf's Offer (Interaction)</h2>
+<div class="section">
+<p>A mysterious ally appears—but is he friend or foe? The heroes must decide whom to trust with Stonebridge’s fate.</p>
+<h3>Story Information</h3>
+<p>The weary heroes face a helpful dwarf Trumble (actually Sissy in disguise) who offers to take the hammer the rest of the way to Stonebridge. Though suspicious, they're tempted to trust him with the hammer pieces. Can they overcome Sissy's deceit and save Stonebridge?</p>
+<ul>
+<li>A Welcoming Dwarf? Standing in the middle of a narrow forest path is a stout dwarf, his arms outstretched in a welcoming gesture.</li>
+<li>A Rehearsed Greeting: The dwarf greets you with a wide, toothy grin and a hearty laugh, relieved to have found you. He claims to be in a hurry to return the Warhammer of Stonebridge to its rightful owners and offers to take it the rest of the way to the city.</li>
+<li>A Sense of Urgency: The dwarf emphasizes the urgency of the situation, insisting that every moment counts. He seems eager to take the Warhammer from you, his eyes darting nervously as he waits for your response.</li>
+<li>A Hidden Agenda? Something about the dwarf's eagerness and the way he avoids direct eye contact makes you uneasy. You suspect there might be more to this encounter than meets the eye.</li>
+</ul>
+<figure>
+<img src="22-dwarf.jpeg" class="storyboard"/>
+<figcaption>Sissy disguised as Trumble.</figcaption>
+</figure>
+<h3>Game Information</h3>
+</div>
+
+<h2>Victory at Stonebridge (Interaction/Denouement)</h2>
+<div class="section">
+<p>Returning as saviors, the heroes face one final choice—embrace their hard-won fame or seek a cure for their lingering curse.</p>
+<h3>Story Information</h3>
+<p>Triumphant, the heroes return to Stonebridge, welcomed by cheering crowds. The shadow of Sissy's curse lifts as gratitude and hope abound. A renowned healer offers to cure them, and a brighter future beckons as the heroes embrace their newfound acclaim.</p>
+<ul>
+<li>Stonebridge, A Dwarven Stronghold: Perched atop a steep, rocky hill, the dwarven settlement of Stonebridge comes into view. The buildings are constructed of sturdy stone and brick, with sturdy fortifications and watchtowers overlooking the surrounding landscape.</li>
+<li>A Sprawling Landscape: The town sits amidst rolling hills, covered in lush green fields and dotted with mines. In the distance, majestic mountains rise majestically against the horizon.</li>
+<li>A Bridge to the World: A sturdy stone bridge connects the town to the valley below, spanning a deep gorge that separates it from the surrounding countryside.</li>
+<li>A Sense of Strength and Security: Stonebridge exudes an aura of strength and security. Smoke curls from chimneys, suggesting a thriving community of industrious dwarves.</li>
+</ul>
+<figure>
+<img src="23-stonebridge.jpeg" class="storyboard"/>
+<figcaption>Stonebridge.</figcaption>
+</figure>
+<ul>
+<li>King Gillibran on the Throne: Seated upon a throne of rough-hewn stone, you see King Gillibran, the ruler of Stonebridge. His face is weathered by age and his eyes gleam with a mixture of wisdom and suspicion.</li>
+<li>Regal Attire: He wears a crown of gold, encrusted with a single, brilliant red jewel. His beard, long and braided, reaches nearly to his waist. He is clad in rich, dark armor adorned with gold and precious stones.</li>
+<li>A Speech Impediment?: The King gestures for you to approach, but his words seem to stumble, his voice halting and uncertain. You notice that he speaks with a strange cadence, as if struggling to form the words.</li>
+<li>A Throne Room Fit for a King: The throne room is large and cavernous, with stone walls decorated with intricate carvings. Torches cast flickering shadows, illuminating the grandeur of the scene.</li>
+</ul>
+<figure>
+<img src="24-gillibran.jpeg" class="storyboard"/>
+<figcaption>King Gillibran.</figcaption>
+</figure>
+<h3>Game Information</h3>
+<p>See Marks of Prestige, DMG24, p.80-81.</p>
+</div>
+
+<h2>Appendix: Treasure</h2>
+
+<h3>Ghoti's Earring of Sylvan Communication</h3>
+<p>Wondrous Item, Uncommon</p>
+<p>This delicate silver earring, adorned with emeralds, hums faintly with a subtle magic. While worn, the wearer can understand any Sylvan they hear clearly, and Sylvans can understand the wearer.</p>
+<figure>
+<img src="25a-ear-cuff.jpeg" class="storyboard"/>
+<figcaption>Ghoti's Earing of Sylvan Communication.</figcaption>
+</figure>
+<p>Having lost her tongue to a brutal orc raid in childhood and struggling with dyslexia, Ghoti found solace in the study of Sylvan. Over the course of two years, while living as a tongueless, dyslexic slug, she mastered the language, even proposing the renaming of Sylvan to "Olde Elvish" based on her groundbreaking research into its origins. Her magnum opus, the "Ox-Fur Elvish Dictionary" (OED), remains a cornerstone of linguistic scholarship.</p>
+<p>Her path through life is so improbable that you couldn’t possibly make it up.</p>
+<figure>
+<img src="25-ghoti.jpeg" class="storyboard"/>
+<figcaption>Ghoti.</figcaption>
+</figure>
+
+<h3>Warhammer of Stonebridge</h3>
+<p>Weapon (Warhammer), Very Rare (Requires Attunement by a Dwarf)</p>
+<p>This ancient warhammer, forged in the heart of dwarven civilization, is a relic of immense power and prestige. Its head is crafted from a meteorite, its handle from a gnarled, ancient oak. The hammer's surface is etched with intricate dwarven runes, each imbued with a unique magical property.</p>
+<p>Properties</p>
+<ul>
+<li>Only a dwarf can attune to the Warhammer of Stonebridge.</li>
+<li>The wielder gains advantage on all Charisma checks made to interact with dwarves.</li>
+<li>The hammer grants a +3 bonus to attack rolls and damage rolls.</li>
+<li>The hammer can be thrown as a ranged weapon, dealing 1d8 force damage on a hit. It returns to the wielder's hand immediately after being thrown.</li>
+</ul>
+<figure>
+<img src="26-hammer.jpeg" class="storyboard"/>
+<figcaption>Warhammer of Stonebridge.</figcaption>
+</figure>
+<p>Legend has it that the Warhammer of Stonebridge was forged by a legendary dwarven smith for King MacGuffin, the founder of the dwarven settlement of Stonebridge. Imbued with powerful magic, the hammer played a pivotal role in King MacGuffin's victories against savage troll hordes, solidifying Stonebridge's place as a bastion of dwarven strength and resilience.</p>
+<p>However, whispers persist of a dark bargain struck during the hammer's creation. It is rumored that the smith, desperate to aid his king and ensure the prosperity of his people, made a pact with a powerful hag. The hammer would suppress a genetic stutter that plagued the MacGuffin royal line, but at a cost. While the hammer granted King MacGuffin and his descendants immense power and military success, the true cost of this bargain remains a closely guarded secret.</p>
+<p>For generations, the Warhammer of Stonebridge has remained within the royal family of Stonebridge, passed down from king to heir. It is currently wielded by King Gillibran, the current ruler of Stonebridge and grandson of the legendary King MacGuffin.</p>
+
+<h3>Letter of Writ</h3>
+<p>To Archmage Yaztromo,</p>
+<p>My dear Yaztromo,</p>
+<p>I trust this letter finds you in good health.</p>
+<p>A grave threat has befallen Stonebridge. The legendary Warhammer, symbol of our strength and guardian of our city, has been stolen. I have dispatched my most trusted dwarf, Bigleg, to seek your aid in this critical matter.</p>
+<p>Your counsel is sorely needed. I trust you will receive him with your customary grace and lend him your ear.</p>
+<p>With sincere respect and the hope of your assistance,</p>
+<p>King Gillibran of Stonebridge</p>
+
+<h2>Appendix: NPCs</h2>
+
+<h3>Boomer the Centaur</h3>
+<p></p>
+<h3>Gereth Yaztromo the Human Archmage</h3>
+<h3>Sugarplum the Faerie Dragon</h3>
+<p>CG</p>
+<h3>Twilight Bloodmoon the Dryad</h3>
+
+<h3>Vicissitude (Sissy) Wormwood</h3>
+<p>Green Hag, Neutral Evil</p>
+<h4>Personality</h4>
+<p>Twisted Idealism (Vicissitude-Driven): This is the foundation. She genuinely believes in a distorted philosophy where unwelcome change (vicissitude) is essential for growth and balance. This justifies her cruel actions in her own mind.</p>
+<p>Detached Cruelty (Lack of Empathy): She is profoundly lacking in empathy, viewing pain as an abstract concept necessary for her warped vision of balance, rather than the lived experience of others. This detachment allows her to inflict suffering without remorse.</p>
+<p>Manipulative and Cryptic Communication: She prefers indirect methods, manipulating events and using cryptic language (riddles, metaphors, proverbs). This reflects her distorted perception of reality and adds to her unsettling nature.</p>
+<p>Arrogant Sense of Superiority (Distorted Self-Perception): She is utterly convinced of the rightness of her philosophy and her role as an agent of vicissitude. This manifests as arrogance and a dismissal of opposing viewpoints.</p>
+<p>Distorted Emulation of a Higher Power (Facsimile of Fate): She acts as a distorted reflection of the Fates, believing she controls destiny and orchestrates the flow of fortune. This delusion of grandeur fuels her actions.</p>
+<p>Childlike Simplicity and Unpredictability: Her understanding of complex concepts is simplistic, reflected in her language and behavior. She can shift abruptly between childlike innocence and chilling rage. This adds to her unsettling and unpredictable nature.</p>
+<p>Obsessed with Change/Vicissitude (Rigid Adherence to a Distorted Ideal): She is fixated on constant change, viewing it as essential for preventing stagnation. This obsession has become rigid and dogmatic, blinding her to the true consequences of her actions.</p>
+<p>Macabre Fascination with Decay and Suffering: She is drawn to images of decay, wounds, and death, seeing them as evidence of the natural cycle of destruction and renewal. This fascination is reflected in her appearance, pronouncements, and the "lessons" she orchestrates.</p>
+<h4>Appearance</h4>
+<p>Skin: Sickly grey-green, like stagnant pond water or decaying foliage. Stretched taut over bone, giving her a gaunt, almost skeletal appearance in some areas.</p>
+<p>Thorny Protrusions: Sharp, thorny outgrowths erupt from her skin, like cruel barbs or hastily drawn spikes. These are not uniform but clustered in patches, perhaps along her back, shoulders, and forearms. Some might even pierce through her clothing.</p>
+<p>Weeping Sores: Open sores mar her flesh, oozing a viscous, iridescent fluid that catches the light in an unsettling way. These sores vary in size and appearance, some small and weeping, others larger and more ulcerous. They attract swarms of buzzing flies, adding to the sense of decay.</p>
+<p>Face: In stark contrast to the rest of her body, her face possesses an unsettling beauty.</p>
+<p>High Cheekbones: Prominent cheekbones give her face a sharp, almost angular appearance.</p>
+<p>Delicate Features: Despite the overall grotesque nature of her form, her nose, lips, and chin are delicately shaped, hinting at a former beauty now corrupted.</p>
+<p>Milky White Eyes: Her eyes are completely white, lacking pupils or irises. They stare blankly ahead, giving the impression that she is looking through you or at something unseen. They rarely blink, adding to the unsettling effect.</p>
+<p>Hair: Greasy and grey, often matted and tangled. It might be streaked with dirt or bits of decaying leaves and twigs.</p>
+<p>Headpiece: A gaudy, colorful fascinator sits askew on her head. It's adorned with:</p>
+<p>Wilting Flowers: The flowers are past their prime, their petals drooping and browning.</p>
+<p>Iridescent Insect Wings: These could be dragonfly wings, butterfly wings, or the wings of some other large insect, adding a touch of otherworldly beauty to the macabre headpiece.</p>
+<p>Attire: Tattered black gothic clothing, clinging to her Reubenesque (full-figured) form. The fabric is torn and frayed in places, revealing glimpses of her grotesque skin beneath. A black crocheted shawl, resembling spider silk, might be draped over her shoulders.</p>
+<p>Limbs: Four powerful, corded arms extend from her torso. They are muscular and sinewy, ending in wickedly sharp claws that are stained with grime and dried blood. These claws are capable of both delicate manipulation and brutal force.</p>
+<p>Overall Impression: The overall impression is one of unsettling contrast: beauty and decay, human and monstrous, natural and unnatural. She is a grotesque parody of life and death intertwined.</p>
+<h4>World View</h4>
+<p>Gillibran (Dwarf King): Sissy views Gillibran with a mixture of pity and contempt. She sees him as weak and dependent on the warhammer, unable to face the true challenges necessary for growth. She might see him as a spoiled child clinging to a toy, preventing him and his people from maturing. She may even have a twisted sort of "tough love" for him, believing that taking the hammer away is ultimately in his best interest.</p>
+<p>MacGuffin (Gillibran's Grandfather): Sissy has a more complex view of MacGuffin. She may have respected him for his initial reliance on her during Stonebridge's founding, seeing it as an acknowledgment of her power. However, she now sees his legacy as a source of weakness for his descendants, creating a dependency she seeks to break. She might even feel betrayed by MacGuffin's eventual rejection of her influence.</p>
+<p>Bloodmoon (Dryad): Sissy sees Bloodmoon as a sentimental fool, clinging to the past and hindering true progress. She views Bloodmoon's protectiveness of the forest as stifling new growth, preventing the natural cycle of decay and rebirth. Sissy might see Bloodmoon as a direct obstacle to her plans, a force of stagnation that must be overcome. She may also see Bloodmoon as a rival for influence over the natural world, a challenge to her self-proclaimed role as an agent of balance.</p>
+<p>Sugarplum (Faerie Dragon): Sissy views Sugarplum as a chaotic pest, a disruptive element that interferes with her carefully orchestrated plans. She finds his whimsical nature and unpredictable actions irritating and frustrating. His magical abilities, especially his illusions and misdirection, make him difficult to control or predict. She also resents his amulet, which makes him hard to track.</p>
+<p>Yaztromo (Archmage): Sissy views Yaztromo with a mixture of grudging respect, irritation, and amusement. She respects his power and understanding of the world but sees him as a predictable obstacle to her plans. She enjoys the challenge of outmaneuvering him, seeing him as a worthy opponent in her twisted game.</p>
+<p>The Warhammer: The warhammer is the focal point of Sissy's current machinations. She sees it as a symbol of the dwarves' dependence and a disruption of the natural balance between them and the trolls. Removing the hammer is her primary goal.</p>
+<p>Darkwood Forest: Sissy feels a deep connection to Darkwood, believing it speaks to her and guides her actions. She sees the forest as a reflection of her own philosophy, a place of constant change, decay, and rebirth. She may consider herself a guardian of the forest in a twisted way, protecting it from stagnation and ensuring its continued cycle of vicissitude.</p>
+<p>Stonebridge (Dwarf Settlement): Sissy sees Stonebridge as a symbol of stagnation, a place where the dwarves have become too comfortable and complacent. She believes they need to be shaken from their complacency to grow stronger. She may even see the destruction of Stonebridge as a necessary part of restoring balance.</p>
+<p>The Trolls: Sissy views the trolls as a necessary part of the ecosystem, a force of attrition that keeps the dwarves in check. She sees their role as analogous to predators in a natural environment, culling the weak and preventing overpopulation. She believes the warhammer prevents the trolls from fulfilling this natural role.</p>
+<h4>Lair</h4>
+<p>The Perverted Guest Parlour:</p>
+<p>The Hollow Log: The main entrance leads into a large, hollow log that serves as Sissy's guest parlor. The interior is surprisingly spacious, though cluttered with strange objects, creating a sense of claustrophobia despite the size.</p>
+<p>Ominous Decorations: Instead of welcoming decorations, the parlour is adorned with a disturbing collection of macabre items: animal skulls (some with strange symbols carved into them), bones (arranged in unsettling patterns), dried flowers (many of them poisonous or associated with death), insect wings (pinned to the walls like morbid butterflies), and other natural curiosities (preserved insects in amber, strangely shaped stones, etc.). These are not simply scattered but arranged with a disturbing sense of purpose, reflecting Sissy's twisted philosophy.</p>
+<p>The Hearth: A small fire burns constantly in a hearth formed by twisted roots, casting flickering shadows that dance across the walls and exaggerate the grotesque decorations. The smoke from the fire has a strange, acrid smell, like burning herbs and decaying leaves.</p>
+<p>Seating Area: Instead of comfortable furniture, a small seating area is arranged around a low, gnarled table. This area consists of several uncomfortable-looking stools made from twisted branches and a larger, more ornate chair made from woven vines and adorned with feathers, bones, and tufts of animal fur. The chair looks almost like a grotesque throne.</p>
+<p>2. The Back Office Swamp:</p>
+<p>A Hidden Passage: A narrow passage near the seating area, concealed by hanging moss and woven vines, leads into a hidden swamp within the hollow log. The air here is instantly thicker, heavy with moisture and the cloying smell of decay and stagnant water.</p>
+<p>The Magical Loom: In the center of the swamp stands a large, rickety loom made from twisted branches and vines, its frame draped with decaying cloth and strands of what appear to be human hair. It is here that Sissy weaves her macabre creations, using entrails, hair, bones, and other gruesome materials.</p>
+<p>The Gulthias Plants: Patches of gulthias plants grow in the swamp, their dark, twisted branches and deep purple/black leaves adding to the oppressive atmosphere. They seem to thrive in the damp, decaying environment.</p>
+<p>Murky Pools: Small pools of murky water dot the swamp, reflecting the dim light and casting eerie, distorted reflections. Strange rustling and bubbling sounds emanate from beneath the surface, suggesting unseen creatures lurking within.</p>
+<p>The Nursery (Currently Empty): Deeper within the swamp, partially obscured by hanging moss and twisting vines, is a small, enclosed area that clearly served as a nursery. It's a disturbing sight: tiny cradles woven from thorny branches and lined with decaying moss, miniature versions of Sissy's own macabre decorations, and small, crudely made toys crafted from bones and feathers lie scattered on the damp earth. The air here is particularly still and heavy, imbued with a palpable sense of loss and emptiness.</p>
+<p>3. The Kitchen Garden:</p>
+<p>The Entrance: A small, arched doorway leads from the guest parlor to the kitchen garden. The doorway is overgrown with moss and vines, making it difficult to see beyond.</p>
+<p>The Garden Itself: The garden is enclosed by a wattle fence made from twisted branches and thorny vines. Inside the fence is a raised bed filled with a variety of plants. These plants are not typical vegetables or herbs, but rather strange, twisted growths that resemble mutated flowers, gnarled roots, and thorny vines. The plants are arranged in a seemingly random pattern, but there is an underlying sense of purpose and intention.</p>
+<p>The Scarecrow: Standing in the center of the garden is a scarecrow made from dried twigs, ragged cloth, and a pumpkin head. However, this is no ordinary scarecrow. Its eyes seem to follow you as you move, and its mouth twists into a sinister grin. There is something unsettling about the scarecrow, as if it is more than just a simple decoration.</p>
+
+
+<h4>Minions</h4>
+<p>Skullcap</p>
+<p>Scarecrow</p>
+
+<h2>Appendix: Other</h2>
+<ul>
+<li>DMG14: Dungeon Master's Guide (2014)</li>
+<li>PHB14: Player's Handbook (2014)</li>
+<li>DMG24: Dungeon Master's Guide (2024)</li>
+<li>PHB24: Player's Handbook (2024)</li>
+<li>MM14: Monster Manual (2014)</li>
+<li>VGM: Volo's Guide to Monsters (2016)</li>
+</ul>
+<p>Images generated by Google Gemini Imagen 3</p>
+
+<h2>The End</h2>
+<img src="27-back-cover.jpeg" class="storyboard"/>
+</body>
+</html/>
